@@ -1,4 +1,6 @@
-*Todos los miembros del grupo administradores , pueden hacer push / pull en este repositorio.
+*Todos los miembros del grupo administradores , pueden hacer push / pull en este repositorio y AÑADIR A OTROS MIEMBROS AL GRUPO
+
+*Al añadir un miembro se le da permiso de administrador.
 
 
 
