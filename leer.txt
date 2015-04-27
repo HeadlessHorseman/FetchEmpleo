@@ -1,0 +1,68 @@
+*Todos los miembros del grupo administradores , pueden hacer push / pull en este repositorio.
+
+
+
+-------------------------------------------------------------------
+*Para sugerencias / problemas , se usará la pestaña "ISSUES" que aparece a la derecha del repositorio.
+
+Como funciona ?:
+
+Se crea un new issue (ticket), se especifica un título y en la descripción se describe el problema / sugerencia etc...
+
+A la derecha en la pestaña label se selecciona un label que tenga que ver con el ticket abierto.
+
+Usaremos 4 labels, con las siguientes indicaciones:
+
+-Question 	-> se usará cuando el ticket sea una pregunta/duda.
+-Bug      	-> se usará cuando el ticket sea un fallo del programa. (se indicará como sucede el problema paso a paso, nada de fotos).
+-Enhancement 	-> se usará cuando el ticket sea una sugerencia de mejora etc..
+-Help wanted 	-> se usará cuando alguien necesite ayuda.
+
+En "asignee" se puede adicionalmente asignar el ticket a un miembro concreto, para que el sea el responsable de atenderlo, por ejemplo si el fallo lo da una clase escrita por pepito , el reporte se le asigna a el.
+
+
+Una vez abierto el ticket , TODOS los miembros del equipo pueden postear en el y responder,para debatir/solucionar los problemas.
+
+Al postear se puede hacer referencia a un mienbro del equipo utilizando la @ delante de su nick, ejemplo:
+
+"bla bla bla @JiV84 bla bla..."  -> enviaría un mensaje de notificación a mi cuenta indicando que alguien me ha nombrado y un enlace al ticket donde se ha producido.
+
+
+Todos los miembros del equipo pueden abrir y cerrar tickets (incluso los que se han abierto por otros miembros) , por eso se recomienda no cerrar los tickets sin previo aviso.
+---------------------------------------------------------
+
+
+
+Para hacer uso del repositorio: Se puede usar desde linux o windows, en windows recomiendo usar el software "GIT EXTENSIONS" y su consola de comandos git bash que viene integrada.
+
+-Se clona el repositorio en local.
+-Alguien debe hacer un primer push del proyecto, para que todos puedan actualizar el repo.
+
+El espacio de nombres a usar será:  FetchEmpleo.
+
+comandos: en git bash (Consola)
+
+mkdir FetchEmpleo          (crea la carpeta para clonar el repo)
+cd FetchEmpleo             (Entramos en la carpeta)
+git clone <repo.git>       (clona el repo en la carpeta)
+git remote add <alias> <https://NOMBRE:PASS@github.com/HeadlessHorseman/FetchEmpleo.git>   (Para que no pida nunca la contraseña al hacer push)
+
+Antes de abrir visual o mono , se debe hacer un pull para actualizar el proyecto en local y al terminar se deben confirmar todos los cambios, hacer de nuevo un pull y finalmente un push.
+
+Si hay conflictos de "merge" se debe abrir un ticket explicando el problema.
+
+
+La rama master será la rama en desarrollo, cuando master sea estable se creará la rama Estable , para problemas gordos se crearán ramas adicionales etc..
+
+------------------------------
+
+Este fichero se irá actualizando conforme surjan problemas.
+
+
+ 
+
+
+
+
+
+
