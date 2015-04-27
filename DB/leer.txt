@@ -1,2 +1,3 @@
 En esta carpeta se introduce el fichero sql que crea la base de datos.
 Cualquier cambio en la DB se realiza en ese fichero.
+
