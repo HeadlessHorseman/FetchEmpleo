@@ -35,7 +35,7 @@ namespace  FetchEmpleo
         void Inicializar()
         {
             lblNombreEmpresa.Text = empresa.Nombre;
-            if (empresa.Imagen != "null")
+            if (string.IsNullOrEmpty(empresa.Imagen))
                 pbxLogoEmpresa.Image = new Bitmap(empresa.Imagen);
             //Edición
             tbxNombre.Text = empresa.Nombre;
