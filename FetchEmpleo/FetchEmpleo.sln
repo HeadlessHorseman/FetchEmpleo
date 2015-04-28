@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchEmpleo", "FetchEmpleo\FetchEmpleo.csproj", "{C0EAE6BA-2A4B-40D4-B7C7-AE6C8B731440}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoFol_ParteEmpresa", "..\ProyectoFol_ParteEmpresa\ProyectoFol_ParteEmpresa\ProyectoFol_ParteEmpresa.csproj", "{E6E5B727-1574-4688-901B-4A468AC7BED6}"
 EndProject
 Global
@@ -11,13 +9,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C0EAE6BA-2A4B-40D4-B7C7-AE6C8B731440}.Debug|x86.ActiveCfg = Debug|x86
-		{C0EAE6BA-2A4B-40D4-B7C7-AE6C8B731440}.Debug|x86.Build.0 = Debug|x86
-		{C0EAE6BA-2A4B-40D4-B7C7-AE6C8B731440}.Release|x86.ActiveCfg = Release|x86
-		{C0EAE6BA-2A4B-40D4-B7C7-AE6C8B731440}.Release|x86.Build.0 = Release|x86
 		{E6E5B727-1574-4688-901B-4A468AC7BED6}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{E6E5B727-1574-4688-901B-4A468AC7BED6}.Debug|x86.Build.0 = Debug|Any CPU
 		{E6E5B727-1574-4688-901B-4A468AC7BED6}.Release|x86.ActiveCfg = Release|Any CPU
 		{E6E5B727-1574-4688-901B-4A468AC7BED6}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
