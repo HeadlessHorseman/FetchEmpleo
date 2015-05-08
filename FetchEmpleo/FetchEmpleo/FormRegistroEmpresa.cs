@@ -44,7 +44,7 @@ namespace RegistroEmpresa
 
         private void btnIngresarDatos_Click(object sender, EventArgs e)
         {
-            daoEmpresa dao = new daoEmpresa();
+            //daoEmpresa dao = new daoEmpresa();
             if (comprobarcampos())
             {
                 //llamada al dao.registrar<- insert into table empresa
