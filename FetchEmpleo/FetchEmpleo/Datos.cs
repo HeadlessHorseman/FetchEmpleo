@@ -132,6 +132,10 @@ namespace  FetchEmpleo
         {
             return daoD.SeleccionarMisCandidatos(id);
         }
+        public Demandante SeleccionarDemandante(string usuario)
+        {
+            return daoD.SeleccionarDemandante(usuario);
+        }
 
         //Insertar
 

@@ -71,11 +71,23 @@
     <Compile Include="FormCandidatos.Designer.cs">
       <DependentUpon>FormCandidatos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDemandante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDemandante.Designer.cs">
+      <DependentUpon>FormDemandante.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEdicionPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEdicionPerfil.Designer.cs">
       <DependentUpon>FormEdicionPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarDemandante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarDemandante.Designer.cs">
+      <DependentUpon>FormEditarDemandante.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEditarOferta.cs">
       <SubType>Form</SubType>
@@ -88,6 +100,12 @@
     </Compile>
     <Compile Include="FormMisOfertas.Designer.cs">
       <DependentUpon>FormMisOfertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOfertasAsociadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOfertasAsociadas.Designer.cs">
+      <DependentUpon>FormOfertasAsociadas.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipalEmpresa.cs">
       <SubType>Form</SubType>
@@ -120,14 +138,23 @@
     <EmbeddedResource Include="FormCandidatos.resx">
       <DependentUpon>FormCandidatos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDemandante.resx">
+      <DependentUpon>FormDemandante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEdicionPerfil.resx">
       <DependentUpon>FormEdicionPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarDemandante.resx">
+      <DependentUpon>FormEditarDemandante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditarOferta.resx">
       <DependentUpon>FormEditarOferta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMisOfertas.resx">
       <DependentUpon>FormMisOfertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOfertasAsociadas.resx">
+      <DependentUpon>FormOfertasAsociadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipalEmpresa.resx">
       <DependentUpon>FormPrincipalEmpresa.cs</DependentUpon>

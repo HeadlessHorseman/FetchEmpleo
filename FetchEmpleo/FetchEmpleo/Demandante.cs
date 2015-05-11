@@ -169,5 +169,32 @@ namespace  FetchEmpleo
             lector.Close();
             return resultado;
         }
+
+        public Demandante SeleccionarDemandante(string login)
+        {
+            Demandante demand = new Demandante();
+            string sql;
+            sql = "select * from demandante where login='" + login + "';";
+
+            MySqlCommand cmd = new MySqlCommand(sql, conexion);
+
+            MySqlDataReader lector = cmd.ExecuteReader();
+
+            lector.Read();
+            demand.Id = (int)lector["id"];
+            demand.Dni = lector["dni"].ToString();
+            demand.Nombre = lector["nombre"].ToString();
+            demand.Apellidos = lector["apellidos"].ToString();
+            demand.Discapacitado = (bool)lector["discapacitado"];
+            demand.FechaNacimiento = (DateTime)(lector["fechaNacimiento"]);
+            demand.Sexo = lector["sexo"].ToString();
+            demand.Domicilio = lector["domicilio"].ToString();
+            demand.Email = lector["email"].ToString();
+            demand.Telefono = Convert.ToInt32(lector["telefono"]);
+            demand.Web = lector["web"].ToString();
+            lector.Close();
+
+            return demand;
+        }
     }
 }
