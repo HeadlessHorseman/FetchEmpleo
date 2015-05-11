@@ -59,11 +59,11 @@
     <Compile Include="Datos.cs" />
     <Compile Include="Demandante.cs" />
     <Compile Include="Empresa.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FormLogeo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormLogeo.Designer.cs">
+      <DependentUpon>FormLogeo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCandidatos.cs">
       <SubType>Form</SubType>
@@ -132,8 +132,8 @@
     <Compile Include="Oferta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormLogeo.resx">
+      <DependentUpon>FormLogeo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCandidatos.resx">
       <DependentUpon>FormCandidatos.cs</DependentUpon>

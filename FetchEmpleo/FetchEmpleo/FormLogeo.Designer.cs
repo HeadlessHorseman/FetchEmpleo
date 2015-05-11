@@ -1,0 +1,154 @@
+﻿namespace FetchEmpleo
+{
+    partial class FormPrincipalLogin
+    {
+        /// <summary>
+        /// Variable del diseñador requerida.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Limpiar los recursos que se estén utilizando.
+        /// </summary>
+        /// <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Código generado por el Diseñador de Windows Forms
+
+        /// <summary>
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido del método con el editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.btnRegistrase = new System.Windows.Forms.Button();
+            this.tbxContrasenya = new System.Windows.Forms.TextBox();
+            this.tbxUsuario = new System.Windows.Forms.TextBox();
+            this.lblNombrePrincipal = new System.Windows.Forms.Label();
+            this.linklblOlvidado = new System.Windows.Forms.LinkLabel();
+            this.linklblEmpresas = new System.Windows.Forms.LinkLabel();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.linklblEmpresas);
+            this.panel1.Controls.Add(this.linklblOlvidado);
+            this.panel1.Controls.Add(this.btnEntrar);
+            this.panel1.Controls.Add(this.btnRegistrase);
+            this.panel1.Controls.Add(this.tbxContrasenya);
+            this.panel1.Controls.Add(this.tbxUsuario);
+            this.panel1.Location = new System.Drawing.Point(148, 90);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(260, 245);
+            this.panel1.TabIndex = 0;
+            // 
+            // btnEntrar
+            // 
+            this.btnEntrar.Location = new System.Drawing.Point(137, 61);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(107, 35);
+            this.btnEntrar.TabIndex = 3;
+            this.btnEntrar.Text = "ENTRAR";
+            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
+            // 
+            // btnRegistrase
+            // 
+            this.btnRegistrase.BackColor = System.Drawing.Color.Red;
+            this.btnRegistrase.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrase.Location = new System.Drawing.Point(13, 187);
+            this.btnRegistrase.Name = "btnRegistrase";
+            this.btnRegistrase.Size = new System.Drawing.Size(231, 44);
+            this.btnRegistrase.TabIndex = 2;
+            this.btnRegistrase.Text = "Regístrate";
+            this.btnRegistrase.UseVisualStyleBackColor = false;
+            // 
+            // tbxContrasenya
+            // 
+            this.tbxContrasenya.Location = new System.Drawing.Point(13, 90);
+            this.tbxContrasenya.Name = "tbxContrasenya";
+            this.tbxContrasenya.Size = new System.Drawing.Size(100, 20);
+            this.tbxContrasenya.TabIndex = 1;
+            this.tbxContrasenya.Text = "Contraseña...";
+            // 
+            // tbxUsuario
+            // 
+            this.tbxUsuario.Location = new System.Drawing.Point(13, 47);
+            this.tbxUsuario.Name = "tbxUsuario";
+            this.tbxUsuario.Size = new System.Drawing.Size(100, 20);
+            this.tbxUsuario.TabIndex = 0;
+            this.tbxUsuario.Text = "Usuario...";
+            // 
+            // lblNombrePrincipal
+            // 
+            this.lblNombrePrincipal.AutoSize = true;
+            this.lblNombrePrincipal.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombrePrincipal.Location = new System.Drawing.Point(192, 19);
+            this.lblNombrePrincipal.Name = "lblNombrePrincipal";
+            this.lblNombrePrincipal.Size = new System.Drawing.Size(179, 34);
+            this.lblNombrePrincipal.TabIndex = 1;
+            this.lblNombrePrincipal.Text = "FetchEmpleo";
+            // 
+            // linklblOlvidado
+            // 
+            this.linklblOlvidado.AutoSize = true;
+            this.linklblOlvidado.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.linklblOlvidado.Location = new System.Drawing.Point(10, 126);
+            this.linklblOlvidado.Name = "linklblOlvidado";
+            this.linklblOlvidado.Size = new System.Drawing.Size(183, 17);
+            this.linklblOlvidado.TabIndex = 4;
+            this.linklblOlvidado.TabStop = true;
+            this.linklblOlvidado.Text = "¿Has olvidado tu contraseña?";
+            // 
+            // linklblEmpresas
+            // 
+            this.linklblEmpresas.AutoSize = true;
+            this.linklblEmpresas.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.linklblEmpresas.Location = new System.Drawing.Point(10, 152);
+            this.linklblEmpresas.Name = "linklblEmpresas";
+            this.linklblEmpresas.Size = new System.Drawing.Size(217, 17);
+            this.linklblEmpresas.TabIndex = 5;
+            this.linklblEmpresas.TabStop = true;
+            this.linklblEmpresas.Text = "¿Eres una empresa? Regístrate aquí";
+            // 
+            // FormPrincipalLogin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(595, 412);
+            this.Controls.Add(this.lblNombrePrincipal);
+            this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Name = "FormPrincipalLogin";
+            this.Text = "Login";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox tbxUsuario;
+        private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.Button btnRegistrase;
+        private System.Windows.Forms.TextBox tbxContrasenya;
+        private System.Windows.Forms.LinkLabel linklblEmpresas;
+        private System.Windows.Forms.LinkLabel linklblOlvidado;
+        private System.Windows.Forms.Label lblNombrePrincipal;
+
+    }
+}
+
