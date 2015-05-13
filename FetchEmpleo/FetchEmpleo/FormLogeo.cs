@@ -23,10 +23,7 @@ namespace FetchEmpleo
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             formPrincipalEmpresa Principal = new formPrincipalEmpresa();
-            if (Conectar()==true)
-            {
-                
-            }
+          
             Entrar();
             
         }

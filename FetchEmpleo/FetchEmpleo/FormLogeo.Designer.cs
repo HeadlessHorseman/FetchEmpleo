@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.linklblEmpresas = new System.Windows.Forms.LinkLabel();
             this.linklblOlvidado = new System.Windows.Forms.LinkLabel();
             this.btnEntrar = new System.Windows.Forms.Button();
@@ -36,8 +38,6 @@
             this.tbxContrasenya = new System.Windows.Forms.TextBox();
             this.tbxUsuario = new System.Windows.Forms.TextBox();
             this.lblNombrePrincipal = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +56,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(375, 245);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(22, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 21);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Contraseña";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(22, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 21);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Usuario";
             // 
             // linklblEmpresas
             // 
@@ -93,7 +115,7 @@
             // 
             this.btnRegistrase.BackColor = System.Drawing.Color.Red;
             this.btnRegistrase.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrase.Location = new System.Drawing.Point(68, 182);
+            this.btnRegistrase.Location = new System.Drawing.Point(67, 182);
             this.btnRegistrase.Name = "btnRegistrase";
             this.btnRegistrase.Size = new System.Drawing.Size(231, 44);
             this.btnRegistrase.TabIndex = 2;
@@ -130,28 +152,6 @@
             this.lblNombrePrincipal.Size = new System.Drawing.Size(179, 34);
             this.lblNombrePrincipal.TabIndex = 1;
             this.lblNombrePrincipal.Text = "FetchEmpleo";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(22, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 21);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Usuario";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(22, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 21);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Contraseña";
             // 
             // FormPrincipalLogin
             // 
