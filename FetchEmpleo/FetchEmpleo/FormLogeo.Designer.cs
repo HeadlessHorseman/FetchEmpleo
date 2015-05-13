@@ -127,7 +127,7 @@
             // tbxContrasenya
             // 
             this.tbxContrasenya.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxContrasenya.ForeColor = System.Drawing.Color.Silver;
+            this.tbxContrasenya.ForeColor = System.Drawing.Color.Black;
             this.tbxContrasenya.Location = new System.Drawing.Point(126, 60);
             this.tbxContrasenya.Name = "tbxContrasenya";
             this.tbxContrasenya.PasswordChar = '*';
@@ -138,7 +138,7 @@
             // tbxUsuario
             // 
             this.tbxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxUsuario.ForeColor = System.Drawing.Color.Silver;
+            this.tbxUsuario.ForeColor = System.Drawing.Color.Black;
             this.tbxUsuario.Location = new System.Drawing.Point(126, 17);
             this.tbxUsuario.Name = "tbxUsuario";
             this.tbxUsuario.Size = new System.Drawing.Size(100, 24);

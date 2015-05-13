@@ -24,7 +24,8 @@ namespace FetchEmpleo
 
         const string IP = "127.0.0.1"; //red local
         const string BD = "proyectoFol";
-        private MySqlConnection conexion;    
+        private MySqlConnection conexion;
+        MyStruct esc = new MyStruct();
     
         public FormPrincipalLogin()
         {
@@ -34,13 +35,14 @@ namespace FetchEmpleo
 
         private void Inicializar()
         {
+            esc.condicion = false;
+            esc.demandante = false;
+            this.Tag = esc;
             Conectar(IP, BD, "root", "usuario");
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            MyStruct esc = new MyStruct();
-            
+        {         
             esc.condicion = Entrar();
             if (checkBoxUsuario.Checked == true)
                 esc.demandante = true;
