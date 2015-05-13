@@ -196,5 +196,51 @@ namespace  FetchEmpleo
 
             return demand;
         }
+
+        public bool ModificarDemandante(Demandante demandante)
+        {
+            bool modificado = false;
+
+            string sql = "update demandante set dni='" + demandante.Id
+                + "',apellidos='" + demandante.Apellidos
+                + "',nombre='" + demandante.Nombre
+                + "',sexo='" + demandante.Sexo
+                + "',discapacitado='" + demandante.Discapacitado
+                + "',email='" + demandante.Email
+                + "',telefono='" + demandante.Telefono
+                + "',domicilio='" + demandante.Domicilio
+                + "',web='" + demandante.Web + "'"
+                + " where id=" + demandante.Id
+                + ";";
+
+            MySqlCommand comandoInsert = new MySqlCommand(sql, conexion);
+
+            MySqlDataReader MyReader;
+
+            try
+            {
+                MyReader = comandoInsert.ExecuteReader();  // Here our query will be executed and data saved into the database.
+                while (MyReader.Read())
+                {
+
+                }
+                MyReader.Close();
+                modificado = true;
+            }
+            catch (MySqlException ex)
+            {
+                switch (ex.Number)
+                {
+                    case 1048: throw new Exception("Columna no puede ser nula");    // Único error con sentido 1048, los demás no se producirán porque
+                    case 1062: throw new Exception("Clave primaria ya existente");      // supuestamente ya se ha creado el usuario con anterioridad
+                    case 1216: throw new Exception("No  se puede añadir, no existe este usuario en tabla Usuarios");
+                    case 1452: throw new Exception("No se puede modificar, no existe este usuario en tabla Usuarios");
+                    default:
+                        throw;
+                }
+            }
+
+            return modificado;
+        }
     }
 }

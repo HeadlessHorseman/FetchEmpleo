@@ -74,14 +74,14 @@ namespace FetchEmpleo
 
         private void btnEditarDts_Click(object sender, EventArgs e)
         {
-            /*
+            
             FormEditarDemandante editarPerfil = new FormEditarDemandante(datosBD, demandante);
             editarPerfil.CerrarPadre += misOfertas_CerrarPadre;
             this.Hide();
             editarPerfil.ShowDialog();
             this.Visible = true;
             Inicializar();
-             */
+            
         }
 
         private void lblWebLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

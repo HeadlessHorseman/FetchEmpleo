@@ -224,6 +224,7 @@ namespace  FetchEmpleo
         public bool ModificarEmpresa(Empresa empresa)
         {
             bool modificado = false;
+
             string sql = "update empresa set cif='" + empresa.Cif
                 + "',razonSocial='" + empresa.RaSocial
                 + "',nombre='" + empresa.Nombre
