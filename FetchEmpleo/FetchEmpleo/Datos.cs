@@ -140,6 +140,10 @@ namespace  FetchEmpleo
         //Insertar
 
         //Modificar
+        public bool ModificarDemandante(Demandante demandante)
+        {
+            return daoD.ModificarDemandante(demandante);
+        }
         #endregion
     }
 }
