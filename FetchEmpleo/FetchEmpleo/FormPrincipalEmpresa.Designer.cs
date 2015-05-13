@@ -58,7 +58,6 @@
             this.btnVerCandidatos = new System.Windows.Forms.Button();
             this.pbxSalir = new System.Windows.Forms.PictureBox();
             this.pbxEditar = new System.Windows.Forms.PictureBox();
-            this.pbxAtras = new System.Windows.Forms.PictureBox();
             this.lblPiePágina = new System.Windows.Forms.Label();
             this.lblCopyRight = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogoEmpresa)).BeginInit();
@@ -66,7 +65,6 @@
             this.pnlDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEditar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxAtras)).BeginInit();
             this.SuspendLayout();
             // 
             // lblInfo1
@@ -401,17 +399,6 @@
             this.pbxEditar.TabStop = false;
             this.pbxEditar.Click += new System.EventHandler(this.pbxEditarPerfil_Click);
             // 
-            // pbxAtras
-            // 
-            this.pbxAtras.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.pbxAtras.Image = ((System.Drawing.Image)(resources.GetObject("pbxAtras.Image")));
-            this.pbxAtras.Location = new System.Drawing.Point(11, 0);
-            this.pbxAtras.Name = "pbxAtras";
-            this.pbxAtras.Size = new System.Drawing.Size(44, 43);
-            this.pbxAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxAtras.TabIndex = 10;
-            this.pbxAtras.TabStop = false;
-            // 
             // lblPiePágina
             // 
             this.lblPiePágina.BackColor = System.Drawing.Color.DarkSeaGreen;
@@ -440,7 +427,6 @@
             this.ClientSize = new System.Drawing.Size(1084, 662);
             this.Controls.Add(this.lblCopyRight);
             this.Controls.Add(this.lblPiePágina);
-            this.Controls.Add(this.pbxAtras);
             this.Controls.Add(this.pbxEditar);
             this.Controls.Add(this.pbxSalir);
             this.Controls.Add(this.btnVerCandidatos);
@@ -460,7 +446,6 @@
             this.pnlDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxEditar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxAtras)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,7 +472,6 @@
         private System.Windows.Forms.Button btnVerCandidatos;
         private System.Windows.Forms.PictureBox pbxSalir;
         private System.Windows.Forms.PictureBox pbxEditar;
-        private System.Windows.Forms.PictureBox pbxAtras;
         private System.Windows.Forms.Label lblPiePágina;
         private System.Windows.Forms.Label lblCopyRight;
         private System.Windows.Forms.LinkLabel lblWebLink;

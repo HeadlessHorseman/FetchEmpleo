@@ -38,6 +38,8 @@
             this.tbxContrasenya = new System.Windows.Forms.TextBox();
             this.tbxUsuario = new System.Windows.Forms.TextBox();
             this.lblNombrePrincipal = new System.Windows.Forms.Label();
+            this.checkBoxUsuario = new System.Windows.Forms.RadioButton();
+            this.checkBoxEmpresa = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,22 +126,22 @@
             // 
             // tbxContrasenya
             // 
-            this.tbxContrasenya.Font = new System.Drawing.Font("Sitka Subheading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxContrasenya.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxContrasenya.ForeColor = System.Drawing.Color.Silver;
             this.tbxContrasenya.Location = new System.Drawing.Point(126, 60);
             this.tbxContrasenya.Name = "tbxContrasenya";
             this.tbxContrasenya.PasswordChar = '*';
-            this.tbxContrasenya.Size = new System.Drawing.Size(100, 26);
+            this.tbxContrasenya.Size = new System.Drawing.Size(100, 24);
             this.tbxContrasenya.TabIndex = 1;
             this.tbxContrasenya.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbxContrasenya_MouseDoubleClick);
             // 
             // tbxUsuario
             // 
-            this.tbxUsuario.Font = new System.Drawing.Font("Sitka Subheading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxUsuario.ForeColor = System.Drawing.Color.Silver;
             this.tbxUsuario.Location = new System.Drawing.Point(126, 17);
             this.tbxUsuario.Name = "tbxUsuario";
-            this.tbxUsuario.Size = new System.Drawing.Size(100, 26);
+            this.tbxUsuario.Size = new System.Drawing.Size(100, 24);
             this.tbxUsuario.TabIndex = 0;
             this.tbxUsuario.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbxUsuario_MouseDoubleClick);
             // 
@@ -153,6 +155,29 @@
             this.lblNombrePrincipal.TabIndex = 1;
             this.lblNombrePrincipal.Text = "FetchEmpleo";
             // 
+            // checkBoxUsuario
+            // 
+            this.checkBoxUsuario.AutoSize = true;
+            this.checkBoxUsuario.Checked = true;
+            this.checkBoxUsuario.Location = new System.Drawing.Point(97, 71);
+            this.checkBoxUsuario.Name = "checkBoxUsuario";
+            this.checkBoxUsuario.Size = new System.Drawing.Size(86, 17);
+            this.checkBoxUsuario.TabIndex = 2;
+            this.checkBoxUsuario.TabStop = true;
+            this.checkBoxUsuario.Text = "Demandante";
+            this.checkBoxUsuario.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEmpresa
+            // 
+            this.checkBoxEmpresa.AutoSize = true;
+            this.checkBoxEmpresa.Location = new System.Drawing.Point(189, 71);
+            this.checkBoxEmpresa.Name = "checkBoxEmpresa";
+            this.checkBoxEmpresa.Size = new System.Drawing.Size(66, 17);
+            this.checkBoxEmpresa.TabIndex = 3;
+            this.checkBoxEmpresa.TabStop = true;
+            this.checkBoxEmpresa.Text = "Empresa";
+            this.checkBoxEmpresa.UseVisualStyleBackColor = true;
+            // 
             // FormPrincipalLogin
             // 
             this.AcceptButton = this.btnEntrar;
@@ -160,6 +185,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(595, 412);
+            this.Controls.Add(this.checkBoxEmpresa);
+            this.Controls.Add(this.checkBoxUsuario);
             this.Controls.Add(this.lblNombrePrincipal);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Black;
@@ -184,6 +211,8 @@
         private System.Windows.Forms.Label lblNombrePrincipal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton checkBoxUsuario;
+        private System.Windows.Forms.RadioButton checkBoxEmpresa;
 
     }
 }

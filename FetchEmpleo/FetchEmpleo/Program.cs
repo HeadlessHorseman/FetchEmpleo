@@ -16,7 +16,19 @@ namespace FetchEmpleo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipalLogin());
+            FormPrincipalLogin login = new FormPrincipalLogin();
+            formPrincipalEmpresa empresa = new formPrincipalEmpresa();
+            FormDemandante demandante = new FormDemandante();
+         
+            Application.Run(login);
+            MyStruct esct = (MyStruct)login.Tag;
+            if (esct.condicion == true)
+            {
+                if (esct.demandante == true)
+                    Application.Run(demandante);
+                else
+                    Application.Run(empresa);
+            }
         }
     }
 }

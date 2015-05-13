@@ -12,20 +12,42 @@ using MySql.Data.MySqlClient;
 
 namespace FetchEmpleo
 {
+    public struct MyStruct
+    {
+        public bool condicion;
+        public bool demandante;
+    }
+
     public partial class FormPrincipalLogin : Form
     {
-        private MySqlConnection conexion;        
+        
+
+        const string IP = "127.0.0.1"; //red local
+        const string BD = "proyectoFol";
+        private MySqlConnection conexion;    
+    
         public FormPrincipalLogin()
         {
             InitializeComponent();
+            Inicializar();
+        }
+
+        private void Inicializar()
+        {
+            Conectar(IP, BD, "root", "usuario");
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            formPrincipalEmpresa Principal = new formPrincipalEmpresa();
-          
-            Entrar();
+            MyStruct esc = new MyStruct();
             
+            esc.condicion = Entrar();
+            if (checkBoxUsuario.Checked == true)
+                esc.demandante = true;
+
+            this.Tag = esc;
+            if (esc.condicion == true)
+                this.Close();            
         }
         public bool Conectar(string srv, string db, string user, string pwd)
         {
@@ -50,15 +72,37 @@ namespace FetchEmpleo
             }
             return conectado;
         }
+
         private bool Entrar()
         {
-            bool conectado=false;
+            string usuario;
+            string passwd;
+            string sql ="select login, contrasena from usuario where login = '" + tbxUsuario.Text + "' and contrasena ='" + tbxContrasenya.Text + "';";
+            MySqlCommand cmd = new MySqlCommand(sql, conexion);
 
-            MySqlCommand cmd = new MySqlCommand("select login, contrasena from usuario where login = '" + tbxUsuario.Text + "' and contrasena ='" + tbxContrasenya.Text + "' ", conexion);
-            return true;
+            MySqlDataReader lector = cmd.ExecuteReader();
+
+            try
+            {
+                lector.Read();
+                usuario = lector["login"].ToString();
+                passwd = lector["contrasena"].ToString();
+                lector.Close();
+
+                if (tbxUsuario.Text == usuario && tbxContrasenya.Text == passwd)
+                    return true;
+                else
+                    return false;
+            }
+            catch
+            {
+                lector.Close();
+                MessageBox.Show("Usuario o contraseña incorrectos...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
 
-        
+        // Esto para qué es??
         private void tbxUsuario_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             
@@ -69,6 +113,6 @@ namespace FetchEmpleo
         {
             tbxContrasenya.SelectionLength = tbxContrasenya.Text.Length;
         }
-
+        //
     }
 }
