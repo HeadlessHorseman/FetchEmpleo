@@ -29,32 +29,59 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linklblEmpresas = new System.Windows.Forms.LinkLabel();
+            this.linklblOlvidado = new System.Windows.Forms.LinkLabel();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnRegistrase = new System.Windows.Forms.Button();
             this.tbxContrasenya = new System.Windows.Forms.TextBox();
             this.tbxUsuario = new System.Windows.Forms.TextBox();
             this.lblNombrePrincipal = new System.Windows.Forms.Label();
-            this.linklblOlvidado = new System.Windows.Forms.LinkLabel();
-            this.linklblEmpresas = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.linklblEmpresas);
             this.panel1.Controls.Add(this.linklblOlvidado);
             this.panel1.Controls.Add(this.btnEntrar);
             this.panel1.Controls.Add(this.btnRegistrase);
             this.panel1.Controls.Add(this.tbxContrasenya);
             this.panel1.Controls.Add(this.tbxUsuario);
-            this.panel1.Location = new System.Drawing.Point(148, 90);
+            this.panel1.Location = new System.Drawing.Point(94, 94);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(260, 245);
+            this.panel1.Size = new System.Drawing.Size(375, 245);
             this.panel1.TabIndex = 0;
+            // 
+            // linklblEmpresas
+            // 
+            this.linklblEmpresas.AutoSize = true;
+            this.linklblEmpresas.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.linklblEmpresas.Location = new System.Drawing.Point(23, 147);
+            this.linklblEmpresas.Name = "linklblEmpresas";
+            this.linklblEmpresas.Size = new System.Drawing.Size(217, 17);
+            this.linklblEmpresas.TabIndex = 5;
+            this.linklblEmpresas.TabStop = true;
+            this.linklblEmpresas.Text = "¿Eres una empresa? Regístrate aquí";
+            // 
+            // linklblOlvidado
+            // 
+            this.linklblOlvidado.AutoSize = true;
+            this.linklblOlvidado.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.linklblOlvidado.Location = new System.Drawing.Point(23, 105);
+            this.linklblOlvidado.Name = "linklblOlvidado";
+            this.linklblOlvidado.Size = new System.Drawing.Size(183, 17);
+            this.linklblOlvidado.TabIndex = 4;
+            this.linklblOlvidado.TabStop = true;
+            this.linklblOlvidado.Text = "¿Has olvidado tu contraseña?";
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(137, 61);
+            this.btnEntrar.Location = new System.Drawing.Point(250, 31);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(107, 35);
             this.btnEntrar.TabIndex = 3;
@@ -66,7 +93,7 @@
             // 
             this.btnRegistrase.BackColor = System.Drawing.Color.Red;
             this.btnRegistrase.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrase.Location = new System.Drawing.Point(13, 187);
+            this.btnRegistrase.Location = new System.Drawing.Point(68, 182);
             this.btnRegistrase.Name = "btnRegistrase";
             this.btnRegistrase.Size = new System.Drawing.Size(231, 44);
             this.btnRegistrase.TabIndex = 2;
@@ -75,19 +102,24 @@
             // 
             // tbxContrasenya
             // 
-            this.tbxContrasenya.Location = new System.Drawing.Point(13, 90);
+            this.tbxContrasenya.Font = new System.Drawing.Font("Sitka Subheading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxContrasenya.ForeColor = System.Drawing.Color.Silver;
+            this.tbxContrasenya.Location = new System.Drawing.Point(126, 60);
             this.tbxContrasenya.Name = "tbxContrasenya";
-            this.tbxContrasenya.Size = new System.Drawing.Size(100, 20);
+            this.tbxContrasenya.PasswordChar = '*';
+            this.tbxContrasenya.Size = new System.Drawing.Size(100, 26);
             this.tbxContrasenya.TabIndex = 1;
-            this.tbxContrasenya.Text = "Contraseña...";
+            this.tbxContrasenya.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbxContrasenya_MouseDoubleClick);
             // 
             // tbxUsuario
             // 
-            this.tbxUsuario.Location = new System.Drawing.Point(13, 47);
+            this.tbxUsuario.Font = new System.Drawing.Font("Sitka Subheading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxUsuario.ForeColor = System.Drawing.Color.Silver;
+            this.tbxUsuario.Location = new System.Drawing.Point(126, 17);
             this.tbxUsuario.Name = "tbxUsuario";
-            this.tbxUsuario.Size = new System.Drawing.Size(100, 20);
+            this.tbxUsuario.Size = new System.Drawing.Size(100, 26);
             this.tbxUsuario.TabIndex = 0;
-            this.tbxUsuario.Text = "Usuario...";
+            this.tbxUsuario.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbxUsuario_MouseDoubleClick);
             // 
             // lblNombrePrincipal
             // 
@@ -99,32 +131,34 @@
             this.lblNombrePrincipal.TabIndex = 1;
             this.lblNombrePrincipal.Text = "FetchEmpleo";
             // 
-            // linklblOlvidado
+            // label1
             // 
-            this.linklblOlvidado.AutoSize = true;
-            this.linklblOlvidado.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.linklblOlvidado.Location = new System.Drawing.Point(10, 126);
-            this.linklblOlvidado.Name = "linklblOlvidado";
-            this.linklblOlvidado.Size = new System.Drawing.Size(183, 17);
-            this.linklblOlvidado.TabIndex = 4;
-            this.linklblOlvidado.TabStop = true;
-            this.linklblOlvidado.Text = "¿Has olvidado tu contraseña?";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(22, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 21);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Usuario";
             // 
-            // linklblEmpresas
+            // label2
             // 
-            this.linklblEmpresas.AutoSize = true;
-            this.linklblEmpresas.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.linklblEmpresas.Location = new System.Drawing.Point(10, 152);
-            this.linklblEmpresas.Name = "linklblEmpresas";
-            this.linklblEmpresas.Size = new System.Drawing.Size(217, 17);
-            this.linklblEmpresas.TabIndex = 5;
-            this.linklblEmpresas.TabStop = true;
-            this.linklblEmpresas.Text = "¿Eres una empresa? Regístrate aquí";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(22, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 21);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Contraseña";
             // 
             // FormPrincipalLogin
             // 
+            this.AcceptButton = this.btnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(595, 412);
             this.Controls.Add(this.lblNombrePrincipal);
             this.Controls.Add(this.panel1);
@@ -148,6 +182,8 @@
         private System.Windows.Forms.LinkLabel linklblEmpresas;
         private System.Windows.Forms.LinkLabel linklblOlvidado;
         private System.Windows.Forms.Label lblNombrePrincipal;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
 
     }
 }
