@@ -300,5 +300,20 @@ namespace  FetchEmpleo
 
             return numOfertas;
         }
+
+        public int MaxId(int idEmpresa)
+        {
+            int maxId;
+            string sql = "select max(id) as Contar from oferta where empresa=" + idEmpresa + ";";
+
+            MySqlCommand selectCount = new MySqlCommand(sql, conexion);
+
+            MySqlDataReader lector = selectCount.ExecuteReader();
+            lector.Read();
+            maxId = Convert.ToInt32(lector["Contar"]);
+            lector.Close();
+
+            return maxId;
+        }
     }
 }

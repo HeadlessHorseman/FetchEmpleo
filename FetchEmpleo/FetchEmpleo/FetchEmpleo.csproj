@@ -122,18 +122,14 @@
     <Compile Include="FormRegistroDemandante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRegistroDemandante.Designer.cs" />
+    <Compile Include="FormRegistroDemandante.Designer.cs">
+      <DependentUpon>FormRegistroDemandante.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegistroEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegistroEmpresa.Designer.cs">
       <DependentUpon>FormRegistroEmpresa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormRegistroUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRegistroUsuario.Designer.cs">
-      <DependentUpon>FormRegistroUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Inscripcion.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
@@ -175,9 +171,6 @@
     <EmbeddedResource Include="FormRegistroDemandante.resx" />
     <EmbeddedResource Include="FormRegistroEmpresa.resx">
       <DependentUpon>FormRegistroEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormRegistroUsuario.resx">
-      <DependentUpon>FormRegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\FetchEmpleo.FormPrincipalLogin.resources" />
     <EmbeddedResource Include="obj\Debug\FetchEmpleo.Properties.Resources.resources" />

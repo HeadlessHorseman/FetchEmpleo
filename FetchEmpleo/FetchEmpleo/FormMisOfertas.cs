@@ -39,9 +39,15 @@ namespace  FetchEmpleo
         {
             arrLabelOferta = new Label[] { lblOferta, lblOferta2, lblOferta3, lblOferta4 };
             arrPanelesOferta = new Panel[] { pnlOferta1, pnlOferta2, pnlOferta3, pnlOferta4 };
-  
+
             if (imagen != "null")
-                pbxLogoEmpresa.Image = new Bitmap(imagen);
+            {
+                try
+                {
+                    pbxLogoEmpresa.Image = new Bitmap(imagen);
+                }
+                catch { }
+            }
             lblNombreEmpresa.Text = empresa;
             try
             {

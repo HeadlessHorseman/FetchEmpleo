@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.linklblEmpresas = new System.Windows.Forms.LinkLabel();
             this.linklblOlvidado = new System.Windows.Forms.LinkLabel();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnRegistrase = new System.Windows.Forms.Button();
@@ -48,7 +47,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.linklblEmpresas);
             this.panel1.Controls.Add(this.linklblOlvidado);
             this.panel1.Controls.Add(this.btnEntrar);
             this.panel1.Controls.Add(this.btnRegistrase);
@@ -64,7 +62,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(22, 64);
+            this.label2.Location = new System.Drawing.Point(24, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 21);
             this.label2.TabIndex = 7;
@@ -75,28 +73,17 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(22, 21);
+            this.label1.Location = new System.Drawing.Point(24, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "Usuario";
             // 
-            // linklblEmpresas
-            // 
-            this.linklblEmpresas.AutoSize = true;
-            this.linklblEmpresas.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.linklblEmpresas.Location = new System.Drawing.Point(23, 147);
-            this.linklblEmpresas.Name = "linklblEmpresas";
-            this.linklblEmpresas.Size = new System.Drawing.Size(217, 17);
-            this.linklblEmpresas.TabIndex = 5;
-            this.linklblEmpresas.TabStop = true;
-            this.linklblEmpresas.Text = "¿Eres una empresa? Regístrate aquí";
-            // 
             // linklblOlvidado
             // 
             this.linklblOlvidado.AutoSize = true;
             this.linklblOlvidado.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            this.linklblOlvidado.Location = new System.Drawing.Point(23, 105);
+            this.linklblOlvidado.Location = new System.Drawing.Point(25, 133);
             this.linklblOlvidado.Name = "linklblOlvidado";
             this.linklblOlvidado.Size = new System.Drawing.Size(183, 17);
             this.linklblOlvidado.TabIndex = 4;
@@ -105,7 +92,7 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(250, 31);
+            this.btnEntrar.Location = new System.Drawing.Point(252, 46);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(107, 35);
             this.btnEntrar.TabIndex = 3;
@@ -123,12 +110,13 @@
             this.btnRegistrase.TabIndex = 2;
             this.btnRegistrase.Text = "Regístrate";
             this.btnRegistrase.UseVisualStyleBackColor = false;
+            this.btnRegistrase.Click += new System.EventHandler(this.btnRegistrase_Click);
             // 
             // tbxContrasenya
             // 
             this.tbxContrasenya.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxContrasenya.ForeColor = System.Drawing.Color.Black;
-            this.tbxContrasenya.Location = new System.Drawing.Point(126, 60);
+            this.tbxContrasenya.Location = new System.Drawing.Point(128, 75);
             this.tbxContrasenya.Name = "tbxContrasenya";
             this.tbxContrasenya.PasswordChar = '*';
             this.tbxContrasenya.Size = new System.Drawing.Size(100, 24);
@@ -139,7 +127,7 @@
             // 
             this.tbxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxUsuario.ForeColor = System.Drawing.Color.Black;
-            this.tbxUsuario.Location = new System.Drawing.Point(126, 17);
+            this.tbxUsuario.Location = new System.Drawing.Point(128, 32);
             this.tbxUsuario.Name = "tbxUsuario";
             this.tbxUsuario.Size = new System.Drawing.Size(100, 24);
             this.tbxUsuario.TabIndex = 0;
@@ -191,6 +179,7 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FormPrincipalLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -206,7 +195,6 @@
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnRegistrase;
         private System.Windows.Forms.TextBox tbxContrasenya;
-        private System.Windows.Forms.LinkLabel linklblEmpresas;
         private System.Windows.Forms.LinkLabel linklblOlvidado;
         private System.Windows.Forms.Label lblNombrePrincipal;
         private System.Windows.Forms.Label label2;

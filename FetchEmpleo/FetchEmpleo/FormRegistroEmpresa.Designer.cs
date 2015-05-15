@@ -1,4 +1,4 @@
-﻿namespace RegistroEmpresa
+﻿namespace FetchEmpleo
 {
     partial class FrnEmpresa
     {
@@ -312,6 +312,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrnEmpresa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dar de alta empresa";
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();

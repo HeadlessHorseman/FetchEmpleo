@@ -103,6 +103,10 @@ namespace  FetchEmpleo
         {
             return daoO.CountOfertas(idEmpresa);
         }
+        public int MaxId(int idEmpresa)
+        {
+            return daoO.MaxId(idEmpresa);
+        }
         #endregion
 
         #region MÉTODOS INSCRIPCION

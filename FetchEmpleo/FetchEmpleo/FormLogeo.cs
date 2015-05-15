@@ -115,6 +115,20 @@ namespace FetchEmpleo
         {
             tbxContrasenya.SelectionLength = tbxContrasenya.Text.Length;
         }
+
+        private void btnRegistrase_Click(object sender, EventArgs e)
+        {
+            if (checkBoxUsuario.Checked == true)
+            {
+                FormRegistroDemandante registroD = new FormRegistroDemandante();
+                registroD.ShowDialog();
+            }
+            else if (checkBoxEmpresa.Checked == true)
+            {
+                FrnEmpresa registroE = new FrnEmpresa();
+                registroE.ShowDialog();
+            }
+        }
         //
     }
 }

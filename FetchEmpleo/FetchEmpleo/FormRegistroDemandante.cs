@@ -69,25 +69,29 @@ namespace FetchEmpleo
         #region Métodos
         private void Limpiar()
         {
-            foreach (TextBox textbox in pnlData.Controls)
+            try
             {
-                textbox.Text = "";
+                foreach (TextBox textbox in pnlData.Controls)
+                {
+                    textbox.Text = "";
+                }
+
+                foreach (TextBox tbox in pnlData2.Controls)
+                {
+                    tbox.Text = "";
+                }
+
+                if (cbxDiscapacitado.Checked)
+                    cbxDiscapacitado.Checked = false;
+
+
+                if (rbtHombre.Checked)
+                    rbtHombre.Checked = false;
+
+                if (rbtMujer.Checked)
+                    rbtMujer.Checked = false;
             }
-
-            foreach (TextBox tbox in pnlData2.Controls)
-            {
-                tbox.Text = "";
-            }
-
-            if (cbxDiscapacitado.Checked)
-                cbxDiscapacitado.Checked = false;
-            
-
-            if (rbtHombre.Checked)
-                rbtHombre.Checked = false;
-
-            if (rbtMujer.Checked)
-                rbtMujer.Checked = false;
+            catch { }
         }
 
         
@@ -212,6 +216,11 @@ namespace FetchEmpleo
         }
 
         #endregion
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
 
     }

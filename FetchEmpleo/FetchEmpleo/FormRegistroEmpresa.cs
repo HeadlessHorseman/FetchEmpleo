@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RegistroEmpresa
+namespace FetchEmpleo
 {
     public partial class FrnEmpresa : Form
     {

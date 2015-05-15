@@ -41,7 +41,13 @@ namespace  FetchEmpleo
             
             lblNombreEmpresa.Text = empresa.Nombre;
             if (empresa.Imagen != "null")
-                pbxLogoEmpresa.Image = new Bitmap(empresa.Imagen);
+            {
+                try
+                {
+                    pbxLogoEmpresa.Image = new Bitmap(empresa.Imagen);
+                }
+                catch { }
+            }
             
             try
             {

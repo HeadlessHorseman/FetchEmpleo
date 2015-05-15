@@ -58,11 +58,11 @@
             this.pnlSexo = new System.Windows.Forms.Panel();
             this.lblSexo = new System.Windows.Forms.Label();
             this.pnlData = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.tbxConfirmarPw = new System.Windows.Forms.TextBox();
             this.lblConfirmar = new System.Windows.Forms.Label();
             this.pnlData2 = new System.Windows.Forms.Panel();
             this.lblCamposObligatorios = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlSexo.SuspendLayout();
             this.pnlData.SuspendLayout();
             this.pnlData2.SuspendLayout();
@@ -171,6 +171,7 @@
             this.btnVolver.TabIndex = 15;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnLimpiar
             // 
@@ -351,6 +352,15 @@
             this.pnlData.Size = new System.Drawing.Size(571, 363);
             this.pnlData.TabIndex = 29;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(387, 287);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(164, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "(Formato de fecha: dd/mm/aaaa)";
+            // 
             // tbxConfirmarPw
             // 
             this.tbxConfirmarPw.Location = new System.Drawing.Point(74, 100);
@@ -388,15 +398,6 @@
             this.lblCamposObligatorios.TabIndex = 32;
             this.lblCamposObligatorios.Text = "Los campos marcados con ( * ) son obligatorios.";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(387, 287);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "(Formato de fecha: dd/mm/aaaa)";
-            // 
             // FormRegistroDemandante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,6 +426,7 @@
             this.Controls.Add(this.btnIngresarDatos);
             this.Controls.Add(this.lblTitulo);
             this.Name = "FormRegistroDemandante";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRegistroDemandante";
             this.pnlSexo.ResumeLayout(false);
             this.pnlSexo.PerformLayout();

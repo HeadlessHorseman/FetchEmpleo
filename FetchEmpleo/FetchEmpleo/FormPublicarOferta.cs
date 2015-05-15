@@ -13,6 +13,7 @@ namespace  FetchEmpleo
 {
     public partial class FormPublicarOferta : Form
     {
+        int maxId;
         int idEmpresa;
         string empresa;
         string logo;
@@ -23,6 +24,7 @@ namespace  FetchEmpleo
         public FormPublicarOferta()
         {
             InitializeComponent();
+            maxId = 0;
         }
         public FormPublicarOferta(int idEmpresa, string empresa, string logo, Datos datosBD)
         {
@@ -36,14 +38,24 @@ namespace  FetchEmpleo
 
         void Inicializar()
         {
+            maxId = 0;
+
             tbxTitulo.Select();
             lblNombreEmpresa.Text = empresa;
             if (logo != "null")
-                pbxLogoEmpresa.Image = new Bitmap(logo);
+            {
+                try
+                {
+                    pbxLogoEmpresa.Image = new Bitmap(logo);
+                }
+                catch { }
+            }
         }
 
         private void btnAplicar_Click(object sender, EventArgs e)
         {
+            maxId = datosBD.MaxId(idEmpresa);
+            unaOferta.Id = maxId + 1;
             unaOferta.IdEmpresa = idEmpresa;
             unaOferta.Titulo = tbxTitulo.Text;
             unaOferta.Requisitos = tbxRequisitos.Text;

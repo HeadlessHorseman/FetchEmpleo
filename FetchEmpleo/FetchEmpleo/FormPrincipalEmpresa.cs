@@ -63,7 +63,13 @@ namespace FetchEmpleo
             lblWebLink.Text = empresa.Web;
             lblNumOfertas.Text = datosBD.numOfertas(empresa.Id).ToString();
             if (empresa.Imagen != "null")
-                pbxLogoEmpresa.Image = Image.FromFile(empresa.Imagen);
+            {
+                try
+                {
+                    pbxLogoEmpresa.Image = Image.FromFile(empresa.Imagen);
+                }
+                catch { }
+            }
         }
         #endregion
 
