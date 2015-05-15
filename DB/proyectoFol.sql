@@ -91,5 +91,5 @@ create table inscripcion (
 -- PRUEBAS 
 insert into usuario values("heikki","usuario");
 insert into usuario values("demandante","usuario");
-insert into empresa values(1,'heikki',12345,'A','CicloHobby','B','email@gmail.com',654980523,'Portada Alta','Málaga','www.google.es','null');
+insert into empresa values(1,'heikki',12345,'A','CicloHobby','B','email@gmail.com',654980523,'Portada Alta','Malaga','www.google.es','null');
 insert into demandante values(2,'demandante','12345','Javier','Medinilla',1,'2000-01-01','M','Portada alta','email@email.com','66666666','www.google.com');
