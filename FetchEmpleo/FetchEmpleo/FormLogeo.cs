@@ -104,7 +104,7 @@ namespace FetchEmpleo
             }
         }
 
-        // Esto para qué es??
+       
         private void tbxUsuario_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             
